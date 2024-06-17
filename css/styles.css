@@ -103,6 +103,7 @@ p {
   z-index: 999;
 
   padding: 24px 24px 40px 16px;
+  overflow: hidden;
 }
 
 .mob-menu-close-btn {
