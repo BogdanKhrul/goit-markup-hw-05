@@ -33,7 +33,7 @@
         </button>
       </div>
       <!---------------------------BACKDROP MOBILE MENU--------------------------->
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <button class="mob-menu-close-btn" type="button">
           <svg class="close-svg-mob-menu" width="8" height="8">
             <use href="./images/icons.svg#icon-krest"></use>
@@ -96,6 +96,98 @@
         </ul>
       </div>
       <!---------------------------BACKDROP MOBILE MENU--------------------------->
+      <!---------------------------MOBILE MODAL--------------------------->
+      <div class="mobile-backdrop is-open">
+        <div class="mobile-modal">
+          <button type="button" class="modal-btn-close-mob">
+            <svg class="modal-svg-btn-close-mob" width="8" height="8">
+              <use href="./images/icons.svg#icon-krest"></use>
+            </svg>
+          </button>
+          <p class="modal-title-mob">
+            Leave your contacts and we will call you back
+          </p>
+          <form>
+            <div class="form-div-mob">
+              <label class="modal-label-mob" for="user-name">Name</label>
+              <div class="form-div-two-mob">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input-mob"
+                  id="user-name"
+                />
+                <svg class="modal-svg-mob" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector-22"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-div-mob">
+              <label class="modal-label-mob" for="user-phone">Phone</label>
+              <div class="form-div-two-mob">
+                <input
+                  type="text"
+                  name="user-phone"
+                  class="modal-input-mob"
+                  id="user-phone"
+                />
+                <svg class="modal-svg-mob" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector-23"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-div-mob">
+              <label class="modal-label-mob" for="user-email">Email</label>
+              <div class="form-div-two-mob">
+                <input
+                  type="text"
+                  name="user-email"
+                  class="modal-input-mob"
+                  id="user-email"
+                />
+                <svg class="modal-svg-mob" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector-24"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="div-txt-area-mob">
+              <label class="modal-label-mob" for="user-comment">Comment</label>
+              <textarea
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+                class="modal-txt-area-mob"
+              ></textarea>
+            </div>
+
+            <div class="checkbox-div-mob">
+              <input
+                id="user-privacy"
+                value="true"
+                type="checkbox"
+                name="user-privacy"
+                class="input-checkbox visually-hidden"
+              />
+              <label class="div-check-label-mob" for="user-privacy">
+                <span class="accept-icon-mob">
+                  <svg class="svg-accept" width="10" height="8">
+                    <use href="./images/icons.svg#icon-Vector-25"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="accept-link-mob" class="modal-link-mob"
+                  >Privacy Policy</a
+                >
+              </label>
+            </div>
+            <button type="submit" class="modal-submit-btn-mob">Send</button>
+          </form>
+        </div>
+      </div>
+      <!---------------------------MOBILE MODAL--------------------------->
     </header>
     <main>
       <!--SECTION-1-->
