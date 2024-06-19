@@ -19,11 +19,29 @@
   <body>
     <header class="web-header">
       <div class="container header-div">
-        <nav class="header-nav">
-          <a href="./index.html" class="main-logo"
+        <a href="./index.html" class="main-logo"
             >Web<span class="logo">Studio</span></a
           >
+        <nav class="header-nav">
+          
+          <ul class="header-list">
+            <li>
+              <a href="./index.html" class="navigation-studio header-studio-btn">Studio</a>
+            </li>
+            <li><a href="" class="navigation-studio">Portfolio</a></li>
+            <li><a href="" class="navigation-studio">Contacts</a></li>
+          </ul>
         </nav>
+        <address class="address-contacts">
+          <ul class="header-list-contacts">
+            <li>
+              <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="email">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
       </div>
       <div class="header-m-b">
         <button class="close-header-btn" type="button">
@@ -97,7 +115,7 @@
       </div>
       <!---------------------------BACKDROP MOBILE MENU--------------------------->
       <!---------------------------MOBILE MODAL--------------------------->
-      <div class="mobile-backdrop is-open">
+      <div class="mobile-backdrop">
         <div class="mobile-modal">
           <button type="button" class="modal-btn-close-mob">
             <svg class="modal-svg-btn-close-mob" width="8" height="8">
@@ -259,12 +277,16 @@
       <section class="about-people">
         <div class="container">
           <h2 class="team">Our Team</h2>
-          <ul class="about-people-ul">
+          <ul class="about-people-ul extra-class">
             <li class="foto">
               <picture>
                 <source
                   srcset="./images/1.jpg 1x, ./images/mark-2x.png 2x"
                   media="(min-width: 320px)"
+                />
+                <source
+                  srcset="./images/1.jpg 1x, ./images/section-two-1-x2.jpg 2x"
+                  media="(min-width: 768px)"
                 />
               </picture>
               <img
@@ -315,6 +337,10 @@
                   srcset="./images/2.jpg 1x, ./images/ford-2x.png 2x"
                   media="(min-width: 320px)"
                 />
+                <source
+                  srcset="./images/2.jpg 1x, ./images/section-two-2-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
               </picture>
               <img src="./images/2.jpg" alt="Frontend Developer" width="264" />
               <div class="people">
@@ -358,6 +384,10 @@
                   srcset="./images/3.jpg 1x, ./images/camila-2x.png 2x"
                   media="(min-width: 320px)"
                 />
+                <source
+                  srcset="./images/3.jpg 1x, ./images/section-two-3-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
               </picture>
               <img src="./images/3.jpg" alt="Marketing" width="264" />
               <div class="people">
@@ -400,6 +430,10 @@
                 <source
                   srcset="./images/4.jpg 1x, ./images/den-2x.png 2x"
                   media="(min-width: 320px)"
+                />
+                <source
+                  srcset="./images/4.jpg 1x, ./images/section-two-4-x2.jpg 2x"
+                  media="(min-width: 768px)"
                 />
               </picture>
               <img src="./images/4.jpg" alt="UI Designer" width="264" />
@@ -454,6 +488,10 @@
                     srcset="./images/CSS-1.jpg 1x, ./images/one-2x.jpg 2x"
                     media="(min-width: 320px)"
                   />
+                  <source
+                    srcset="./images/CSS-1.jpg 1x, ./images/portofolio-1-x2.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
                 </picture>
                 <img src="./images/CSS-1.jpg" alt="App" width="360" />
                 <p class="par-section-hover">
@@ -473,6 +511,10 @@
                   <source
                     srcset="./images/CSS-2.jpg 1x, ./images/two-2x.jpg 2x"
                     media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="./images/CSS-2.jpg 1x, ./images/portofolio-2-x2.jpg 2x"
+                    media="(min-width: 768px)"
                   />
                 </picture>
                 <img src="./images/CSS-2.jpg" alt="Marketing" width="360" />
@@ -494,6 +536,10 @@
                     srcset="./images/CSS-3.jpg 1x, ./images/three-2x.jpg 2x"
                     media="(min-width: 320px)"
                   />
+                  <source
+                    srcset="./images/CSS-3.jpg 1x, ./images/portofolio-3-x2.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
                 </picture>
                 <img src="./images/CSS-3.jpg" alt="App" width="360" />
                 <p class="par-section-hover">
@@ -513,6 +559,10 @@
                   <source
                     srcset="./images/CSS-4.jpg 1x, ./images/four-2x.jpg 2x"
                     media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="./images/CSS-4.jpg 1x, ./images/portofolio-4-x2.jpg 2x"
+                    media="(min-width: 768px)"
                   />
                 </picture>
                 <img src="./images/CSS-4.jpg" alt="Marketing" width="360" />
@@ -534,6 +584,10 @@
                     srcset="./images/CSS-5.jpg 1x, ./images/five-2x.jpg 2x"
                     media="(min-width: 320px)"
                   />
+                  <source
+                    srcset="./images/CSS-5.jpg 1x, ./images/portofolio-5-x2.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
                 </picture>
                 <img src="./images/CSS-5.jpg" alt="Design" width="360" />
                 <p class="par-section-hover">
@@ -553,6 +607,10 @@
                   <source
                     srcset="./images/CSS-6.jpg 1x, ./images/six-2x.jpg 2x"
                     media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="./images/CSS-6.jpg 1x, ./images/portofolio-6-x2.jpg 2x"
+                    media="(min-width: 768px)"
                   />
                 </picture>
                 <img src="./images/CSS-6.jpg" alt="Marketing" width="360" />

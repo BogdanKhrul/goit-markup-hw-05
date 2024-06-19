@@ -58,6 +58,14 @@ p {
 
 /* ----------Header---------- */
 
+.header-list {
+  display: none;
+}
+
+.header-list-contacts {
+  display: none;
+}
+
 .web-header {
   display: flex;
   justify-content: space-between;
@@ -1036,3 +1044,256 @@ input::placeholder {
   pointer-events: auto;
   visibility: visible;
 }
+
+/*---------------------------------- TABLETE ----------------------------------*/
+
+@media screen and (min-width: 768px) {
+  
+  
+/*----------------------------- HEADER -----------------------------*/
+  .container {
+    max-width: 768px;
+  }
+ 
+  .header-div {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .navigation-studio {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #2e2f42;
+   padding: 24px 0;
+   display: flex;
+}
+
+.navigation-studio:hover,
+.navigation-studio:focus {
+  color: #404bbf;
+}
+
+.address-contacts {
+  font-style: normal;
+  display: flex;
+}
+
+.email {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #434455;
+}
+
+.email:hover {
+  color: #404bbf;
+}
+
+.email:focus {
+  color: #404bbf;
+}
+
+.web-header {
+padding: 0 16px 0 16px;
+margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.header-studio-btn {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-studio-btn::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+.header-list-contacts {
+  display: flex;
+  flex-direction: column; 
+  margin: 0;
+}
+
+ .header-m-b {
+  display: none;
+ }
+/*----------------------------- HEADER END -----------------------------*/
+/*----------------------------- SECTION 1 -----------------------------*/
+
+.main-title {
+  min-width: 496px;
+  margin-bottom: 36px;
+  font-size: 56px;
+ line-height: 1.07;
+}
+
+.section-title {
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-tablet-x1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 112px 136px 112px 136px;
+}
+
+@media screen and (min-resolution: 2dppx) {
+ .section-title {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-tablet-x2.jpg);
+}
+}
+
+/*----------------------------- SECTION 1 END -----------------------------*/
+/*----------------------------- SECTION 2 -----------------------------*/
+.list-about-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 74px 24px;
+}
+
+.list-about-features-li {
+  max-width: 356px;
+  width: calc((100% - 24px) / 2);
+}
+
+.info-title {
+  text-align: start;
+}
+
+/*----------------------------- SECTION 2 END -----------------------------*/
+/*----------------------------- SECTION 3 -----------------------------*/
+
+.about-people-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px 24px;  
+  justify-content: center;
+}
+
+.foto {
+  margin: 0;
+}
+
+.foto:not(:last-child) {
+   margin-bottom: 0;
+}
+
+
+
+/*----------------------------- SECTION 3 END -----------------------------*/
+/*----------------------------- SECTION 4 -----------------------------*/
+
+.marketing-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  align-items: center;
+}
+
+.marketing-li {
+  min-width: 356px;
+}
+
+.marketing-li:not(:last-child) {
+ margin: 0;
+}
+
+/*----------------------------- SECTION 4 END -----------------------------*/
+/*----------------------------- FOOTER -----------------------------*/
+
+.page-footer {
+  padding: 0;
+}
+
+.footer-div-one {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 0 auto; 
+  padding: 96px 0 96px 108px;
+}
+
+.footer-div-two {
+  max-width: 264px;
+  margin-bottom: 72px;
+  margin-right: 24px;
+}
+
+.footer-div-three {
+  max-width: 208px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer-logo {
+  text-align: start;
+  margin-bottom: 16px;
+}
+
+.footer-three-text { 
+  text-align: start;
+  margin-bottom: 16px;
+}
+
+.footer-div-soc-p-two {
+  text-align: start;
+  margin-bottom: 16px;
+}
+
+.footer-div-soc-one {
+min-width: 264px;
+}
+
+.footer-form-soc-one {
+  display: flex;
+}
+
+.footer-links-btn-one {
+  margin-top: 0;
+}
+
+.soc-label {
+  margin-right: 24px;
+  min-width: 264px;
+}
+
+/*----------------------------- FOOTER 4 END -----------------------------*/
+}
+
+/*---------------------------------- TABLETE END ----------------------------------*/
